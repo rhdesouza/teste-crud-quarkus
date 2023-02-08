@@ -1,7 +1,0 @@
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\domain\interfaces\BookService.java
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\application\service\BookServiceImp.java
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\webapi\representation\BookRepresentation.java
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\infrastructure\conf\SwaggerConfig.java
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\infrastructure\persistence\entity\BookEntity.java
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\domain\entities\Book.java
-G:\_DESENVOLVIMENTO\_WORKSPACE\teste-crud-quarkus\src\main\java\org\rh\test\webapi\controller\BookController.java
