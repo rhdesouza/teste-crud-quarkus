@@ -1,0 +1,8 @@
+org\rh\test\webapi\representation\BookRepresentation.class
+org\rh\test\domain\entities\Book.class
+org\rh\test\infrastructure\persistence\entity\BookEntity.class
+org\rh\test\domain\interfaces\BookService.class
+org\rh\test\infrastructure\conf\SwaggerConfig.class
+org\rh\test\domain\entities\Book$BookBuilder.class
+org\rh\test\application\service\BookServiceImp.class
+org\rh\test\webapi\controller\BookController.class

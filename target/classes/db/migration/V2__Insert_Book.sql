@@ -1,0 +1,3 @@
+INSERT INTO book (id, title, launch_year, pages, creation_date, update_date) VALUES (1, 'O projeto fenix', 2015, 431, '2023-07-02', '2023-07-02');
+INSERT INTO book (id, title, launch_year, pages, creation_date, update_date) VALUES (2, 'Arquitetura Limpa', 2019, 403, '2023-07-02', '2023-07-02');
+INSERT INTO book (id, title, launch_year, pages, creation_date, update_date) VALUES (3, 'Código Limpo', 2018, 409, '2023-07-02', '2023-07-02');

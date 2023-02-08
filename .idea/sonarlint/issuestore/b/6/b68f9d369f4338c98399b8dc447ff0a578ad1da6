@@ -1,0 +1,5 @@
+
+|
+java:S3252"ZUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "listAll".(ü°Ì¤ıÿÿÿÿ8ı©·óâ0
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(… ¨8Æ…ôâ0

@@ -1,0 +1,7 @@
+
+ˆ
+java:S1488"kImmediately return this expression instead of assigning it to the temporary variable "bookRepresentations".(„’·8×û×óâ0
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¯×Üóâ0
+c
+java:S1128"FRemove this unused import 'org.rh.test.domain.interfaces.BookService'.(‘Ú¦ï8¥†ôâ0

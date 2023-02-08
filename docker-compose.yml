@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  mysql:
+    container_name: mysql_teste_quarkus
+    image: mysql:latest
+    networks:
+      - quarkus_network
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: "teste"
+    ports:
+      - 3306:3306
+    restart: always
+
+networks:
+  quarkus_network:

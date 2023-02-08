@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS book (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(120) NOT NULL,
+  launch_year INT NOT NULL,
+  pages INT NOT NULL,
+  creation_date DATETIME NOT NULL,
+  update_date DATETIME
+);
+
