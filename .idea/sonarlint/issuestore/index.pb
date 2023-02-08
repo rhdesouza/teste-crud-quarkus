@@ -15,3 +15,14 @@ w
 Gsrc/main/java/org/rh/test/webapi/representation/BookRepresentation.java,6\0\6068a766b9e57af8320321f84cf1f5813316e41b
 {
 Ksrc/main/java/org/rh/test/infrastructure/persistence/entity/BookEntity.java,f\d\fdcedd174251801333790809276515c52716a29a
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+a
+1src/test/java/org/rh/test/GreetingResourceIT.java,8\c\8c1198c539f994904bb4e1fad32cfd549226315d
+c
+3src/test/java/org/rh/test/GreetingResourceTest.java,4\1\412d346106b2bb3b17789d1f312282b2b09163b0

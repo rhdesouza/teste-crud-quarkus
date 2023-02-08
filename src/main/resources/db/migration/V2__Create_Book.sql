@@ -3,7 +3,8 @@ CREATE TABLE IF NOT EXISTS book (
   title VARCHAR(120) NOT NULL,
   launch_year INT NOT NULL,
   pages INT NOT NULL,
-  creation_date DATETIME NOT NULL,
-  update_date DATETIME
+  author VARCHAR(50) NOT NULL
 );
+
+
 

@@ -1,15 +1,19 @@
 package org.rh.test.infrastructure.persistence.entity;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import lombok.NoArgsConstructor;
 import org.rh.test.domain.entities.Book;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity(name = "book")
-public class BookEntity extends PanacheEntity {
+@NoArgsConstructor
+public class BookEntity extends PanacheEntityBase {
+
+    @Id
+    @Column(name="id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
 
     @Column(name = "title")
     private String title;
@@ -19,14 +23,8 @@ public class BookEntity extends PanacheEntity {
 
     @Column(name = "pages")
     private Integer pages;
-
-    @Column(name = "creation_date")
-    @CreationTimestamp
-    private Date creationDate;
-
-    @Column(name = "update_date")
-    @UpdateTimestamp
-    private Date updateDate;
+    @Column(name = "author")
+    private String author;
 
     public Book toDomain() {
         return Book.builder()
@@ -34,9 +32,15 @@ public class BookEntity extends PanacheEntity {
                 .title(this.title)
                 .launchYear(this.launchYear)
                 .pages(this.pages)
-                .creationDate(this.creationDate)
-                .updateDate(this.updateDate)
+                .author(this.author)
                 .build();
     }
 
+    public BookEntity(Book book) {
+        this.id = book.getId();
+        this.title = book.getTitle();
+        this.launchYear = book.getLaunchYear();
+        this.pages = book.getPages();
+        this.author = book.getAuthor();
+    }
 }

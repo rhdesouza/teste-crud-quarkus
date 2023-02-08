@@ -21,8 +21,6 @@ public class Book {
 
     private Integer pages;
 
-    private Date creationDate;
-
-    private Date updateDate;
+    private String author;
 
 }
