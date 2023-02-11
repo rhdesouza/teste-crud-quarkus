@@ -1,10 +1,8 @@
-CREATE TABLE IF NOT EXISTS book (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(120) NOT NULL,
-  launch_year INT NOT NULL,
-  pages INT NOT NULL,
-  author VARCHAR(50) NOT NULL
+CREATE TABLE IF NOT EXISTS `book`(
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `title` varchar(120) NOT NULL,
+  `launch_year` int NOT NULL,
+  `pages` int NOT NULL,
+  `author` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 );
-
-
-

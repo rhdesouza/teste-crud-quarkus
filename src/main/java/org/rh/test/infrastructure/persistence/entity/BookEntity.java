@@ -1,17 +1,20 @@
 package org.rh.test.infrastructure.persistence.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.rh.test.domain.entities.Book;
 
 import javax.persistence.*;
 
-@Entity(name = "book")
+
 @NoArgsConstructor
+@Data
+@Entity(name = "book")
 public class BookEntity extends PanacheEntityBase {
 
     @Id
-    @Column(name="id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
