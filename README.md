@@ -1,3 +1,73 @@
+# 👀 CRUD - Quarkus
+
+## 🎮️ Sobre
+Este projeto visa estudar a observabilidade de uma aplicação rest.
+
+## 👨‍💻️ Tecnogias utilizadas
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+💻️ Spring 3.0.1
+
+    Api (JDK: 17)
+
+💻️ Prometheus
+
+    Monitoramento e alertas
+
+💻️ Grafana
+
+    Análise e Monitoramento
+
+💻️ Loki 
+
+    Agregação de Registros (logs)
+
+💻️ K6
+    
+    Teste de performance
+
+💻️ ZipKin
+
+    Trace das transações
+
+💻️ Docker
+    
+    Virtualizador de aplicações
+
+---------------------------------
+
+## Referências de estudo:
+
+[How To Monitor a Spring Boot App With Prometheus and Grafana](https://betterprogramming.pub/how-to-monitor-a-spring-boot-app-with-prometheus-and-grafana-22e2338f97fc)
+
+[Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
+
+[Dashboard de métricas com Spring Boot Actuator, Prometheus e Grafana](https://www.youtube.com/watch?v=K_EI1SxVQ5Q)
+
+[Ferramentas de Observabilidade](https://github.com/liliannss/observabilidade)
+
+[Zipkin](https://springbootlearning.medium.com/using-micrometer-to-trace-your-spring-boot-app-1fe6ff9982ae)
+
+----------------------------------
+### Comandos:
+
+<b>Gerar container spring:<b> 
+
+1 - ``mvn install ``
+
+2 - ``docker build -t springio/gs-spring-boot-docker .`` (deprecated)
+
+OU
+
+    mvn spring-boot:build-image
+    docker tag observability-api:0.0.1-SNAPSHOT rhdesouza/observability-api:0.0.1-SNAPSHOT
+    docker push rhdesouza/observability-api:0.0.1-SNAPSHOT
+
+----------------------------------
+
+# Sobre a cofiguração:
+
+
 # teste-crud-quarkus
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
