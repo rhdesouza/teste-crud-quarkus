@@ -2,7 +2,7 @@ package org.rh.test.webapi.controller;
 
 import org.rh.test.application.service.BookServiceImp;
 import org.rh.test.domain.entities.Book;
-import org.rh.test.webapi.representation.BookCrationRepresentation;
+import org.rh.test.infrastructure.mapper.BookMapper;
 import org.rh.test.webapi.representation.BookRepresentation;
 
 import javax.inject.Inject;
@@ -19,11 +19,14 @@ public class BookController {
     @Inject
     private BookServiceImp bookService;
 
+    @Inject
+    BookMapper bookMapper;
+
     @GET
     public List<BookRepresentation> getAllBooks() {
         List<BookRepresentation> bookRepresentations = bookService.getAllBooks()
                 .stream()
-                .map(BookRepresentation::new)
+                .map(bookMapper::toRepresentation)
                 .collect(Collectors.toList());
 
         return bookRepresentations;
@@ -33,13 +36,13 @@ public class BookController {
     @Path("{id}")
     public BookRepresentation findBookById(@PathParam("id") Long idBook) {
         Book book = bookService.findById(idBook);
-        return new BookRepresentation(book);
+        return bookMapper.toRepresentation(book);
     }
 
     @POST()
-    public BookRepresentation create(BookCrationRepresentation bookCrationRepresentation) {
-        Book book = bookService.create(bookCrationRepresentation.toDomain());
-        return new BookRepresentation(book);
+    public BookRepresentation create(BookRepresentation bookRepresentation) {
+        Book book = bookService.create(bookMapper.toDomain(bookRepresentation));
+        return bookMapper.toRepresentation(book);
     }
 
     @DELETE()
